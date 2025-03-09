@@ -123,17 +123,17 @@ export default function Home() {
               <div className="grid gap-8 py-8 md:grid-cols-2">
                 <div className="flex flex-col justify-center space-y-4">
                   <p className="text-muted-foreground">
-                    I`&apos;`m a passionate Full Stack Developer with 5+ years of experience building web applications. I
-                    specialize in JavaScript, React, Node.js, and modern web technologies. I`&apos;`m dedicated to creating
+                    I&apos;m a passionate Full Stack Developer with 5+ years of experience building web applications. I
+                    specialize in JavaScript, React, Node.js, and modern web technologies. I&apos;m dedicated to creating
                     efficient, scalable, and user-friendly solutions that solve real-world problems.
                   </p>
                   <p className="text-muted-foreground">
                     My journey in tech began when I was in college, tinkering with websites and learning how to code.
-                    Since then, I`&apos;`ve worked with startups and established companies to build products that users love. I
+                    Since then, I&apos;ve worked with startups and established companies to build products that users love. I
                     enjoy the challenge of solving complex problems and turning ideas into reality.
                   </p>
                   <p className="text-muted-foreground">
-                    When I`&apos;`m not coding, you can find me exploring new technologies, contributing to open-source
+                    When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source
                     projects, or mentoring aspiring developers. I believe in continuous learning and sharing knowledge
                     with the community.
                   </p>
@@ -462,7 +462,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                      <li>Led the frontend development of the company`&apos;`s flagship SaaS product</li>
+                      <li>Led the frontend development of the company&apos;s flagship SaaS product</li>
                       <li>Implemented a new component library that improved development speed by 40%</li>
                       <li>Mentored junior developers and conducted code reviews</li>
                       <li>Collaborated with UX/UI designers to create intuitive user interfaces</li>
@@ -529,8 +529,8 @@ export default function Home() {
                 <div>
                   <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
                   <p className="text-muted-foreground mb-6">
-                    I`&apos;`m currently looking for new opportunities. Whether you have a question or just want to say hi,
-                    I`&apos;`ll try my best to get back to you!
+                    I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi,
+                    I&apos;ll try my best to get back to you!
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
@@ -566,7 +566,7 @@ export default function Home() {
                 <Card className="border border-primary/20">
                   <CardHeader>
                     <CardTitle>Send a Message</CardTitle>
-                    <CardDescription>I`&apos;`ll get back to you as soon as possible</CardDescription>
+                    <CardDescription>I&apos;ll get back to you as soon as possible</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <form className="grid gap-4">
