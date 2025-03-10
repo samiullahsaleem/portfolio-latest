@@ -30,7 +30,7 @@ export default function Home() {
                 dominantBaseline="middle"
                 fill="currentColor"
               >
-                J
+                S
               </text>
             </Hexagon>
           </Link>
@@ -64,7 +64,7 @@ export default function Home() {
       </header>
 
       <div className="fixed left-10 bottom-0 hidden lg:flex flex-col gap-6 items-center">
-        <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <Link href="https://github.com/samiullahsaleem" target="_blank" rel="noopener noreferrer">
           <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
@@ -556,18 +556,18 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="text-sm hover:text-primary transition-colors"
                       >
-                        linkedin.com/in/johndoe
+                        linkedin.com/in/samiullahsaleem
                       </a>
                     </div>
                     <div className="flex items-center gap-3">
                       <Github className="h-5 w-5 text-primary" />
                       <a
-                        href="https://github.com"
+                        href="https://github.com/samiullahsaleem"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm hover:text-primary transition-colors"
                       >
-                        github.com/johndoe
+                        github.com/samiullahsaleem
                       </a>
                     </div>
                   </div>
@@ -627,13 +627,13 @@ export default function Home() {
             © 2024 Sami Ullah Saleem. All rights reserved.
           </p>
           <div className="flex gap-4 md:hidden">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/samiullahsaleem" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://linkedin.com/in/samiullahsaleem" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
