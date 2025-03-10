@@ -50,6 +50,9 @@ export default function Home() {
             <Link href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
               <span className="text-primary mr-1">05.</span> Contact
             </Link>
+            <Link href="/blog" className="text-sm font-medium hover:text-primary transition-colors">
+              <span className="text-primary mr-1">06.</span> Blog
+            </Link>
           </nav>
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
@@ -73,7 +76,7 @@ export default function Home() {
             <span className="sr-only">LinkedIn</span>
           </Button>
         </Link>
-        <Link href="mailto:john@example.com">
+        <Link href="mailto:samiullah1701734@gmail.com">
           <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
             <Mail className="h-5 w-5" />
             <span className="sr-only">Email</span>
@@ -84,8 +87,8 @@ export default function Home() {
 
       <div className="fixed right-10 bottom-0 hidden lg:block">
         <div className="vertical-text text-xs tracking-widest text-muted-foreground mb-24">
-          <a href="mailto:john@example.com" className="hover:text-primary transition-colors">
-            john@example.com
+          <a href="mailto:samiullah1701734@gmail.com" className="hover:text-primary transition-colors">
+            samiullah1701734@gmail.com
           </a>
         </div>
       </div>
@@ -434,6 +437,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              <div className="w-full flex justify-center mt-8">
+                <Button asChild>
+                  <Link href="/projects">View All Projects</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -535,8 +544,8 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <Mail className="h-5 w-5 text-primary" />
-                      <a href="mailto:john@example.com" className="text-sm hover:text-primary transition-colors">
-                        john@example.com
+                      <a href="mailto:samiullah1701734@gmail.com" className="text-sm hover:text-primary transition-colors">
+                        samiullah1701734@gmail.com
                       </a>
                     </div>
                     <div className="flex items-center gap-3">
@@ -630,7 +639,7 @@ export default function Home() {
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:john@example.com">
+            <Link href="mailto:samiullah1701734@gmail.com">
               <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
