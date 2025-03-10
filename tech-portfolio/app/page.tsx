@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
+import profile from "../images/profileImage.jpg"
 import { ExternalLink, Github, Linkedin, Mail, Hexagon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -50,9 +51,9 @@ export default function Home() {
             <Link href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
               <span className="text-primary mr-1">05.</span> Contact
             </Link>
-            <Link href="/blog" className="text-sm font-medium hover:text-primary transition-colors">
+            {/* <Link href="/blog" className="text-sm font-medium hover:text-primary transition-colors">
               <span className="text-primary mr-1">06.</span> Blog
-            </Link>
+            </Link> */}
           </nav>
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
@@ -70,7 +71,7 @@ export default function Home() {
             <span className="sr-only">GitHub</span>
           </Button>
         </Link>
-        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <Link href="https://linkedin.com/in/samiullahsaleem" target="_blank" rel="noopener noreferrer">
           <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
@@ -126,26 +127,23 @@ export default function Home() {
               <div className="grid gap-8 py-8 md:grid-cols-2">
                 <div className="flex flex-col justify-center space-y-4">
                   <p className="text-muted-foreground">
-                    I&apos;m a passionate Full Stack Developer with 5+ years of experience building web applications. I
-                    specialize in JavaScript, React, Node.js, and modern web technologies. I&apos;m dedicated to creating
-                    efficient, scalable, and user-friendly solutions that solve real-world problems.
+                    I&apos;m a passionate software developer with expertise in Next.js, TypeScript, MongoDB, Prisma, Postgres, Redis
+                    and Java. I specialize in building scalable web applications, optimizing performance, and integrating AI-powered solutions.
                   </p>
                   <p className="text-muted-foreground">
-                    My journey in tech began when I was in college, tinkering with websites and learning how to code.
-                    Since then, I&apos;ve worked with startups and established companies to build products that users love. I
-                    enjoy the challenge of solving complex problems and turning ideas into reality.
+                  I focus on creating engaging user experiences that are both functional and visually appealing. Whether it&apos;s developing real-time chat applications, 
+                  implementing session management, or integrating search technologies like Elasticsearch, I thrive on solving complex challenges.
                   </p>
                   <p className="text-muted-foreground">
-                    When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source
-                    projects, or mentoring aspiring developers. I believe in continuous learning and sharing knowledge
-                    with the community.
+                  Beyond development, I have a deep interest in game design, 
+                  where I explore creative ideas for unique gaming experiences. My work reflects a blend of innovation, efficiency, and security, ensuring robust solutions tailored to real-world needs.
                   </p>
                 </div>
                 <div className="flex justify-center">
                   <div className="relative w-64 h-64 border-2 border-primary rounded-md">
                     <div className="absolute -top-4 -right-4 w-64 h-64 border-2 border-primary rounded-md overflow-hidden">
                       <Image
-                        src="/placeholder.svg?height=400&width=400"
+                        src={profile}
                         alt="About me image"
                         width={400}
                         height={400}
@@ -196,9 +194,6 @@ export default function Home() {
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
                         Tailwind CSS
                       </Badge>
-                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Redux
-                      </Badge>
                     </div>
                   </CardContent>
                 </Card>
@@ -232,6 +227,9 @@ export default function Home() {
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
                         AWS
                       </Badge>
+                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
+                        Java
+                      </Badge>
                     </div>
                   </CardContent>
                 </Card>
@@ -254,17 +252,13 @@ export default function Home() {
                         CI/CD
                       </Badge>
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Jest
+                      Notion
                       </Badge>
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Cypress
+                        Jira
                       </Badge>
-                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Figma
-                      </Badge>
-                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Agile
-                      </Badge>
+
+
                     </div>
                   </CardContent>
                 </Card>
@@ -438,11 +432,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full flex justify-center mt-8">
+              {/* <div className="w-full flex justify-center mt-8">
                 <Button asChild>
                   <Link href="/projects">View All Projects</Link>
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -461,20 +455,20 @@ export default function Home() {
                   <CardHeader>
                     <div className="flex items-center justify-between">
                       <div>
-                        <CardTitle className="text-xl">Senior Frontend Developer</CardTitle>
-                        <CardDescription className="text-primary">TechCorp Inc.</CardDescription>
+                        <CardTitle className="text-xl">Associate Software Engineer</CardTitle>
+                        <CardDescription className="text-primary">i2c Inc.</CardDescription>
                       </div>
                       <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
-                        2021 - Present
+                        Jul 2024 - Present
                       </Badge>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                      <li>Led the frontend development of the company&apos;s flagship SaaS product</li>
-                      <li>Implemented a new component library that improved development speed by 40%</li>
-                      <li>Mentored junior developers and conducted code reviews</li>
-                      <li>Collaborated with UX/UI designers to create intuitive user interfaces</li>
+                      <li>Recognized the significance of writing clean, maintainable code.</li>
+                      <li>Acquired knowledge of Java, JAR files, API integration, and Spring Boot for building APIs.</li>
+                      <li>Successfully implemented core credit-related features.</li>
+                      <li>Collaborated with Interface Team to integerate API</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -482,41 +476,20 @@ export default function Home() {
                   <CardHeader>
                     <div className="flex items-center justify-between">
                       <div>
-                        <CardTitle className="text-xl">Full Stack Developer</CardTitle>
-                        <CardDescription className="text-primary">WebSolutions Ltd.</CardDescription>
+                        <CardTitle className="text-xl">Software Enginner Intern</CardTitle>
+                        <CardDescription className="text-primary">Devinc</CardDescription>
                       </div>
                       <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
-                        2018 - 2021
+                        June 2023 - September 2023
                       </Badge>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                      <li>Developed and maintained multiple client websites and web applications</li>
-                      <li>Built RESTful APIs and integrated third-party services</li>
-                      <li>Implemented responsive designs and ensured cross-browser compatibility</li>
-                      <li>Participated in agile development processes and sprint planning</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-                <Card className="border border-primary/20">
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <CardTitle className="text-xl">Junior Web Developer</CardTitle>
-                        <CardDescription className="text-primary">Digital Agency XYZ</CardDescription>
-                      </div>
-                      <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
-                        2016 - 2018
-                      </Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                      <li>Assisted in the development of client websites using HTML, CSS, and JavaScript</li>
-                      <li>Worked with WordPress and custom PHP solutions</li>
-                      <li>Collaborated with the design team to implement pixel-perfect designs</li>
-                      <li>Participated in client meetings and requirement gathering</li>
+                      <li>Learned about core Software Development</li>
+                      <li>Learned about the importance of the clean code</li>
+                      <li>Build Products like Bugzilla</li>
+                      <li>Learned about the Docker</li>
                     </ul>
                   </CardContent>
                 </Card>
