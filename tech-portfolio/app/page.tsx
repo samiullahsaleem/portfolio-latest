@@ -64,35 +64,6 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="fixed left-10 bottom-0 hidden lg:flex flex-col gap-6 items-center">
-        <Link href="https://github.com/samiullahsaleem" target="_blank" rel="noopener noreferrer">
-          <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
-            <Github className="h-5 w-5" />
-            <span className="sr-only">GitHub</span>
-          </Button>
-        </Link>
-        <Link href="https://linkedin.com/in/samiullahsaleem" target="_blank" rel="noopener noreferrer">
-          <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
-            <Linkedin className="h-5 w-5" />
-            <span className="sr-only">LinkedIn</span>
-          </Button>
-        </Link>
-        <Link href="mailto:samiullah1701734@gmail.com">
-          <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
-            <Mail className="h-5 w-5" />
-            <span className="sr-only">Email</span>
-          </Button>
-        </Link>
-        <div className="h-24 w-px bg-border"></div>
-      </div>
-
-      <div className="fixed right-10 bottom-0 hidden lg:block">
-        <div className="vertical-text text-xs tracking-widest text-muted-foreground mb-24">
-          <a href="mailto:samiullah1701734@gmail.com" className="hover:text-primary transition-colors">
-            samiullah1701734@gmail.com
-          </a>
-        </div>
-      </div>
 
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
