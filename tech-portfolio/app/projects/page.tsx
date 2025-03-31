@@ -36,7 +36,7 @@ const projectsData: Project[] = [
     id: 1,
     title: "E-Commerce Platform",
     description:
-      "A full-featured online shopping platform with user authentication, product management, shopping cart, quick search, and secure checkout using Stripe integration.",
+      "A full-featured online shopping platform with user authentication, product management, shopping cart, quick search, proper logs, and secure checkout using Stripe integration.",
     image: "/placeholder.svg?height=500&width=800",
     category: "Web Development",
     languages: ["React", "Node.js", "MongoDB", "Stripe"],
