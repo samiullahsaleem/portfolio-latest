@@ -42,9 +42,9 @@ export default function Home() {
             <Link href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
               <span className="text-primary mr-1">02.</span> Skills
             </Link>
-            <Link href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
+            {/* <Link href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
               <span className="text-primary mr-1">03.</span> Projects
-            </Link>
+            </Link> */}
             <Link href="#experience" className="text-sm font-medium hover:text-primary transition-colors">
               <span className="text-primary mr-1">04.</span> Experience
             </Link>
@@ -144,17 +144,12 @@ export default function Home() {
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        React
-                      </Badge>
-                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Next.js
-                      </Badge>
-                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        TypeScript
-                      </Badge>
+
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
                         JavaScript
+                      </Badge>
+                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
+                        Jquery
                       </Badge>
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
                         HTML5
@@ -175,13 +170,16 @@ export default function Home() {
                   <CardContent className="space-y-2">
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Node.js
+                        Java
                       </Badge>
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Express
+                        Spring Boot
                       </Badge>
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        MongoDB
+                        Java EE
+                      </Badge>
+                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
+                        Struts
                       </Badge>
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
                         PostgreSQL
@@ -190,16 +188,10 @@ export default function Home() {
                         REST API
                       </Badge>
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        GraphQL
-                      </Badge>
-                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
                         Firebase
                       </Badge>
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
                         AWS
-                      </Badge>
-                      <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                        Java
                       </Badge>
                     </div>
                   </CardContent>
@@ -228,8 +220,6 @@ export default function Home() {
                       <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
                         Jira
                       </Badge>
-
-
                     </div>
                   </CardContent>
                 </Card>
@@ -238,7 +228,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        {/* <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-start justify-center space-y-4">
               <div className="space-y-2">
@@ -249,75 +239,24 @@ export default function Home() {
               </div>
 
               <div className="grid gap-16 py-8 w-full">
-                <div className="grid md:grid-cols-5 gap-4 md:gap-8 items-center">
-                  <div className="md:col-span-3 order-2 md:order-1">
-                    <h3 className="text-2xl font-bold mb-2">E-Commerce Platform</h3>
-                    <div className="bg-card p-6 rounded-lg shadow-lg mb-4">
-                      <p className="text-card-foreground mb-4">
-                        A full-featured online shopping platform with user authentication, product management, shopping
-                        cart, and secure checkout using Stripe integration.
-                      </p>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                          React
-                        </Badge>
-                        <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                          Node.js
-                        </Badge>
-                        <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                          MongoDB
-                        </Badge>
-                        <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                          Stripe
-                        </Badge>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <Button variant="outline" size="sm" asChild className="gap-2">
-                        <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4" />
-                          Code
-                        </Link>
-                      </Button>
-                      <Button size="sm" asChild className="gap-2">
-                        <Link href="#" target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4" />
-                          Live Demo
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                  <div className="md:col-span-2 order-1 md:order-2">
-                    <div className="relative overflow-hidden rounded-lg border border-primary/20">
-                      <Image
-                        src="/placeholder.svg?height=300&width=500"
-                        alt="Project 1"
-                        width={500}
-                        height={300}
-                        className="object-cover transition-transform duration-300 hover:scale-105"
-                      />
-                    </div>
-                  </div>
-                </div>
 
-                <div className="grid md:grid-cols-5 gap-4 md:gap-8 items-center">
+                                <div className="grid md:grid-cols-5 gap-4 md:gap-8 items-center">
                   <div className="md:col-span-2 order-1">
                     <div className="relative overflow-hidden rounded-lg border border-primary/20">
                       <Image
-                        src="/placeholder.svg?height=300&width=500"
+                        src="/instruvia.png?height=300&width=600"
                         alt="Project 2"
-                        width={500}
+                        width={600}
                         height={300}
                         className="object-cover transition-transform duration-300 hover:scale-105"
                       />
                     </div>
                   </div>
                   <div className="md:col-span-3 order-2">
-                    <h3 className="text-2xl font-bold mb-2">Task Management App</h3>
+                    <h3 className="text-2xl font-bold mb-2">Instruvia - Powered By AI </h3>
                     <div className="bg-card p-6 rounded-lg shadow-lg mb-4">
                       <p className="text-card-foreground mb-4">
-                        Developed a task management app with real-time updates, team collaboration features, and
-                        detailed analytics for productivity tracking.
+                          Unlock Knowledge on Any Topic Instantly!
                       </p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
@@ -327,22 +266,13 @@ export default function Home() {
                           TypeScript
                         </Badge>
                         <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                          PostgreSQL
-                        </Badge>
-                        <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                          Prisma
+                          MongoDB
                         </Badge>
                       </div>
                     </div>
                     <div className="flex gap-4">
-                      <Button variant="outline" size="sm" asChild className="gap-2">
-                        <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4" />
-                          Code
-                        </Link>
-                      </Button>
                       <Button size="sm" asChild className="gap-2">
-                        <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://instruvia.org/" target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="h-4 w-4" />
                           Live Demo
                         </Link>
@@ -350,8 +280,32 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
                 <div className="grid md:grid-cols-5 gap-4 md:gap-8 items-center">
+                  <div className="md:col-span-3 order-2 md:order-1">
+                    <h3 className="text-2xl font-bold mb-2">GoLog- An Open Source Package in Go</h3>
+                    <div className="bg-card p-6 rounded-lg shadow-lg mb-4">
+                      <p className="text-card-foreground mb-4">
+                        Implement log4j in go language
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
+                          Go
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="flex gap-4">
+                      <Button variant="outline" size="sm" asChild className="gap-2">
+                        <Link href="https://github.com/samiullahsaleem/golog" target="_blank" rel="noopener noreferrer">
+                          <Github className="h-4 w-4" />
+                          Code
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+
+
+                { <div className="grid md:grid-cols-5 gap-4 md:gap-8 items-center">
                   <div className="md:col-span-3 order-2 md:order-1">
                     <h3 className="text-2xl font-bold mb-2">AI Content Generator</h3>
                     <div className="bg-card p-6 rounded-lg shadow-lg mb-4">
@@ -400,17 +354,17 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                </div>
+                </div> }
               </div>
 
-              {/* <div className="w-full flex justify-center mt-8">
+              {<div className="w-full flex justify-center mt-8">
                 <Button asChild>
                   <Link href="/projects">View All Projects</Link>
                 </Button>
-              </div> */}
+              </div> }
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="experience" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -426,11 +380,30 @@ export default function Home() {
                   <CardHeader>
                     <div className="flex items-center justify-between">
                       <div>
+                        <CardTitle className="text-xl">Software Engineer</CardTitle>
+                        <CardDescription className="text-primary">i2c Inc.</CardDescription>
+                      </div>
+                      <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
+                        Jan 2025 - Present
+                      </Badge>
+                    </div>
+                  </CardHeader>
+                                    <CardContent>
+                    <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+                      <li>Write Singon service to switch between two different versions of the same application</li>
+                      <li>Build API's using spring boot 3</li>
+                      <li>Built new credit screens on web end and integerate API's to get the data</li>
+                      <li>Learned the importance of Kafka, Redis, and RabbitMQ</li>
+                    </ul>
+                  </CardContent>
+                   <CardHeader>
+                    <div className="flex items-center justify-between">
+                      <div>
                         <CardTitle className="text-xl">Associate Software Engineer</CardTitle>
                         <CardDescription className="text-primary">i2c Inc.</CardDescription>
                       </div>
                       <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
-                        Jul 2024 - Present
+                        Jul 2024 - Dec 2024
                       </Badge>
                     </div>
                   </CardHeader>
@@ -457,10 +430,10 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                      <li>Learned about core Software Development</li>
+                      <li>Learned about core Software Development using Django</li>
+                      <li>Built apps in docker containers</li>
                       <li>Learned about the importance of the clean code</li>
                       <li>Build Products like Bugzilla</li>
-                      <li>Learned about the Docker</li>
                     </ul>
                   </CardContent>
                 </Card>
