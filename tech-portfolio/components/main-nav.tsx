@@ -84,7 +84,9 @@ export function MainNav({ activeSection }: MainNavProps) {
 
         <div className="flex items-center gap-4">
           <MagneticButton variant="outline" className="hidden md:flex">
+            <a href="/samiullahsaleem.pdf">
             Resume
+            </a>
           </MagneticButton>
 
           <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMobileMenu}>

@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import profile from "../images/profileImage.jpg"
-import { ExternalLink, Github, Linkedin, Mail, Hexagon } from "lucide-react"
+import {  Github, Linkedin, Mail, Hexagon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -57,9 +57,14 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
+            <a href="/SamiUllahSaleem.pdf">
             <Button variant="outline" className="hidden md:flex">
-              Resume
+
+            Resume
+                      
             </Button>
+            </a>
+
           </div>
         </div>
       </header>
@@ -391,8 +396,8 @@ export default function Home() {
                                     <CardContent>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                       <li>Write Singon service to switch between two different versions of the same application</li>
-                      <li>Build API's using spring boot 3</li>
-                      <li>Built new credit screens on web end and integerate API's to get the data</li>
+                      <li>Build APIs using spring boot 3</li>
+                      <li>Built new credit screens on web end and integerate APIs to get the data</li>
                       <li>Learned the importance of Kafka, Redis, and RabbitMQ</li>
                     </ul>
                   </CardContent>
